@@ -5,7 +5,7 @@ function findMany() {
 }
 
 function findOneById(hotelId: number) {
-  return prisma.hotel.findFirst({
+  return prisma.hotel.findUnique({
     where: {
       id: hotelId,
     },
